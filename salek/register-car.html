@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل مركبة جديدة - Salik</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background-color: #004a8f;
+            color: white;
+            padding: 20px;
+        }
+        header img {
+            width: 100px;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        main {
+            padding: 20px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input, select {
+            padding: 10px;
+            width: 80%;
+            max-width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #004a8f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #ffcc00;
+            color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://www.salik.ae/assets/images/salik-logo.svg" alt="شعار Salik">
+        <h1>تسجيل مركبة جديدة - Salik</h1>
+    </header>
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="payment.html">دفع الفواتير</a>
+        <a href="register-car.html">تسجيل مركبة جديدة</a>
+        <a href="violations.html">الاستعلام عن المخالفات</a>
+    </nav>
+    <main>
+        <h2>تسجيل مركبة جديدة</h2>
+        <p>من هنا يمكنك تسجيل مركبتك الجديدة في نظام Salik.</p>
+
+        <!-- نموذج تسجيل مركبة جديدة -->
+        <form id="registration-form">
+            <label for="owner-name">اسم المالك:</label>
+            <input type="text" id="owner-name" name="owner-name" required>
+            <br><br>
+            <label for="vehicle-type">نوع المركبة:</label>
+            <select id="vehicle-type" name="vehicle-type">
+                <option value="car">سيارة</option>
+                <option value="truck">شاحنة</option>
+                <option value="motorcycle">دراجة نارية</option>
+            </select>
+            <br><br>
+            <label for="vehicle-number">رقم المركبة:</label>
+            <input type="text" id="vehicle-number" name="vehicle-number" required>
+            <br><br>
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <button type="submit">تسجيل</button>
+        </form>
+    </main>
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2023 Salik</p>
+    </footer>
+
+    <script>
+        // JavaScript لإرسال النموذج والتحويل إلى صفحة التأكيد
+        document.getElementById('registration-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // منع إرسال النموذج بالطريقة التقليدية
+
+            // تحويل المستخدم إلى صفحة التأكيد
+            window.location.href = 'confirmation.html';
+        });
+    </script>
+</body>
+</html>

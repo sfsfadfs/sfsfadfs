@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية - Salik</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background-color: #004a8f;
+            color: white;
+            padding: 20px;
+        }
+        header img {
+            width: 100px;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        main {
+            padding: 20px;
+        }
+        .options {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .options a {
+            background-color: #004a8f;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .options a:hover {
+            background-color: #ffcc00;
+            color: #333;
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .images img {
+            width: 200px;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://www.salik.ae/assets/images/salik-logo.svg" alt="شعار Salik">
+        <h1>مرحبًا بكم في Salik</h1>
+    </header>
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="payment.html">دفع الفواتير</a>
+        <a href="register-car.html">تسجيل مركبة جديدة</a>
+        <a href="violations.html">الاستعلام عن المخالفات</a>
+    </nav>
+    <main>
+        <h2>خدمات Salik</h2>
+        <p>نظام Salik الإلكتروني لتسهيل دفع الرسوم المرورية.</p>
+
+        <!-- الخيارات -->
+        <div class="options">
+            <a href="payment.html">دفع الفواتير</a>
+            <a href="register-car.html">تسجيل مركبة جديدة</a>
+            <a href="violations.html">الاستعلام عن المخالفات</a>
+        </div>
+
+        <!-- الصور -->
+        <div class="images">
+            <img src="https://www.salik.ae/assets/images/service1.jpg" alt="دفع الفواتير">
+            <img src="https://www.salik.ae/assets/images/service2.jpg" alt="تسجيل مركبة جديدة">
+            <img src="https://www.salik.ae/assets/images/service3.jpg" alt="الاستعلام عن المخالفات">
+        </div>
+    </main>
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2023 Salik</p>
+    </footer>
+</body>
+</html>
